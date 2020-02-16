@@ -36,12 +36,19 @@ npm install storact
 import storact from 'storact'
 
 const {
-  
+  useDispatch,
+  useStoreState,
+  Provider,
 } = storact({
-  initialState, // 
+  initialState, // store的初始状态 - optional
+  middlewares, // 中间件集合 - optional
+  effects, // effect集合 - optional
+  namespace, // 命名空间 - optional
 })
 
+export { useDispatch, useStoreState, Provider }
 ```
+
 
 
 ```markdown
